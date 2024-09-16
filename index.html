@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cut the roap</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="text-container">
+        <h1>CUT THE ROAP</h1>
+        <p>
+          Cut the Rope es un videojuego de lógica lanzado el año 2010. El juego
+          y su secuela de 2011 Cut the Rope: Experiments fueron creados por la
+          compañía rusa de entretenimiento y juegos ZeptoLaby publicados por
+          Chillingo. En 2013 también surge una segunda secuela llamada Cut the
+          Rope: Time Travel. El objetivo del juego es darle un caramelo a un
+          pequeño monstruo llamado Om Nom mientras se recogen estrellas. En cada
+          nivel, el caramelo cuelga por una o más cuerdas que el jugador debe
+          cortar deslizando el dedo (o mouse en la versión web). Usando varios
+          objetos como burbujas flotantes y bramidos, el caramelo también debe
+          ser manipulado alrededor de los objetos para llegar a la boca de Om
+          Nom. Cada pack de niveles introduce nuevos desafíos. Los niveles son
+          evaluados con una calificación de 0 a 3 estrellas, dependiendo de la
+          cantidad de estrellas recogidas por el jugador, y una calificación de
+          puntos dependiendo del número de estrellas recogidas y el tiempo
+          tomado para completar el nivel.
+        </p>
+      </div>
+      <div class="object-container">
+        <h2>Objeto con texturas originales</h2>
+        <model-viewer
+          src="./assets/Cut_the_rope.glb"
+          ar
+          environment-image="./assets/enviroment.jpg"
+          poster="./assets/Cut_the_rope.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        ></model-viewer>
+        <h2>Objeto con texturas PBR (Baking)</h2>
+        <model-viewer
+          src="./assets/Cut_the_rope1.glb"
+          ar
+          environment-image="./assets/enviroment.jpg"
+          poster="./assets/Cut_the_rope.webp"
+          shadow-intensity="1"
+          camera-controls
+          touch-action="pan-y"
+        ></model-viewer>
+      </div>
+    </div>
+    <div class="footer">
+      <footer>
+        <ul>
+          <li><h3>Parcial</h3><p>#1</p></li>
+          <li>
+            <h3>Universidad:</h3>
+            <p>Icesi</p>
+          </li>
+          <li>
+            <h3>Materia:</h3>
+            <p>Creacion de experiencias AR/VR</p>
+          </li>
+          <li>
+            <h3>Profesor:</h3>
+            <p>Alex Velasco</p>
+          </li>
+          <li>
+            <h3>Estudiante:</h3>
+            <p>Daniel Zapata Correa</p>
+          </li>
+          <li>
+            <h3>Codigo:</h3>
+            <p>A00376753</p>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
